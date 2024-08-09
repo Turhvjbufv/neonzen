@@ -1,0 +1,15 @@
+@media (-moz-bool-pref: "zen.view.sidebar-expanded") {
+    .tabbrowser-tab:not([pinned]) {
+        color: #f200b6 !important;
+        border-radius: 1rem !important;
+        
+    }
+}
+@media (-moz-bool-pref: "zen.view.sidebar-expanded") {
+  .tabbrowser-tab {
+      & .tab-stack {
+        background-color: black !important;
+        border-radius: 1rem !important;
+    }
+  }
+}
