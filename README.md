@@ -1,8 +1,6 @@
 
 # neon theme for zen Css
 
-# How to install?
-
 <b>Steps to configure the theme:</b>
 <ol>
    <li>Download the theme from the <b> << Releases >> </b> section, in the right side of this page</code></li> 
