@@ -9,7 +9,7 @@
    <li>Restart the browser. </li>
 </ol>
 
-<ul><li><p><b> To find out the location of your profile directory go to <a href="https://github.com/Godiesc/firefox-gx#example-of-aboutsupport"> about:support</a> or about:profiles.</b></p></li></ul>
+<ul><li><p><b> To find out the location of your profile directory go to about:support or about:profiles.</b></p></li></ul>
 </br>
 
 # Known Issues
