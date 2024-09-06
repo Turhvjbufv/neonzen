@@ -91,8 +91,11 @@
 }
 
 #appcontent, #browser, #tabbrowser-tabbox, #tabbrowser-tabpanels, .browserSidebarContainer {
-    border-color: black !important;
+    border-color: transparent !important;
     background-color: black !important;
+    background-image: url("../icons/poison.png") !important;
+    background-repeat: no-repeat !important;;
+    background-size: cover  !important;;
 }
 /* Glowing border around tabs */
 
