@@ -1,56 +1,75 @@
-@media (-moz-bool-pref: "zen.view.sidebar-expanded") {
-    .tabbrowser-tab:not([pinned]) {
-        color: #f200b6 !important;
-        box-shadow: 0px 0px 1px rgba(255, 0, 255, 1),
-            0px 0px 4px rgba(0, 255, 255, 1) !important;
-        /* Neon glow effect for inactive tabs */
-        margin-top: 3px !important;
-        margin-bottom: 3px !important;
-        /* Distance between tabs */
-        border-radius: 1rem !important;
-        transition: box-shadow 0.1s ease-in-out !important;
-        /* Smooth glow transition */
-        background-color: black !important;
-    }
+.tabbrowser-tab {
+    color: #f200b6 !important;
+    box-shadow: 0px 0px 1px rgba(255, 0, 255, 1),
+        0px 0px 4px rgba(0, 255, 255, 1) !important;
+    /* Neon glow effect for inactive tabs */
+    margin-top: 3px !important;
+    margin-bottom: 3px !important;
+    /* Distance between tabs */
+    border-radius: 1rem !important;
+    transition: box-shadow 0.1s ease-in-out !important;
+    /* Smooth glow transition */
+    background-color: black !important;
+}
 
-    .tabbrowser-tab:not([pinned]):hover {
-        color: #f200b6 !important;
-        box-shadow: 0px 0px 1px rgba(255, 0, 0, 1),
-            0px 0px 4px rgba(255, 0, 0, 1) !important;
-        /* Neon glow effect for hovering tabs */
-        transition: box-shadow 0.1s ease-in-out !important;
-        /* Smooth glow transition */
-    }
+.tabbrowser-tab:hover {
+    color: #f200b6 !important;
+    box-shadow: 0px 0px 1px rgba(255, 0, 0, 1),
+        0px 0px 4px rgba(255, 0, 0, 1) !important;
+    /* Neon glow effect for hovering tabs */
+    transition: box-shadow 0.1s ease-in-out !important;
+    /* Smooth glow transition */
 }
-#vertical-tabs-newtab-button{
-     background-color: black !important;
+
+
+.tabbrowser-tab:is([selected]):hover {
+    box-shadow: 0px 0px 1px rgba(255, 0, 0, 1),
+        0px 0px 4px rgba(255, 0, 0, 1) !important;
+    /* Neon glow effect for hovering tabs */
+    transition: box-shadow 0.1s ease-in-out !important;
+    /* Smooth glow transition */
 }
-#vertical-tabs-newtab-button:hover{
-     background-color: rgb(15, 15, 15) !important;
-       border: red solid 1px !important;;
+
+
+#vertical-tabs-newtab-button {
+    background-color: black !important;
 }
+
+#vertical-tabs-newtab-button:hover {
+    background-color: rgb(15, 15, 15) !important;
+    border: red solid 1px !important;
+
+}
+
 .toolbarbutton-1 {
     fill: aqua !important;
     /* Neon glow effect for inactive tabs */
 }
 
-.zen-sidebar-action-button{
+.zen-sidebar-action-button {
     fill: aqua !important;
-        box-shadow: 0px 0px 1px rgba(255, 0, 255, 1),
+    box-shadow: 0px 0px 1px rgba(255, 0, 255, 1),
         0px 0px 4px rgba(0, 255, 255, 1) !important;
 }
 
-@media (-moz-bool-pref: "zen.view.sidebar-expanded") {
-    .tabbrowser-tab {
-        & .tab-stack {
-            background-color: black !important;
-            border-radius: 1rem !important;
-        }
+.zen-sidebar-action-button:hover {
+    fill: red !important;
+    box-shadow: 0px 0px 1px rgba(255, 0, 0, 1),
+        0px 0px 4px rgba(255, 0, 0, 1) !important;
+    transition: box-shadow 0.1s ease-in-out !important;
+
+}
+
+.tabbrowser-tab {
+    & .tab-stack {
+        background-color: black !important;
+        border-radius: 1rem !important;
     }
 }
 
 
-.tabbrowser-tab:is([multiselected="true"], [selected]) {
+
+.tabbrowser-tab:is([selected]) {
     box-shadow: 0px 0px 4px rgba(255, 0, 255, 1),
         0px 0px 1px rgba(0, 255, 255, 1) !important;
     /* Neon glow effect for selected tabs */
@@ -90,13 +109,20 @@
     transition: transform 0.3s ease, background-color 0.1s ease !important;
 }
 
-#appcontent, #browser, #tabbrowser-tabbox, #tabbrowser-tabpanels, .browserSidebarContainer {
+#appcontent,
+#browser,
+#tabbrowser-tabbox,
+#tabbrowser-tabpanels,
+.browserSidebarContainer {
     border-color: transparent !important;
     background-color: black !important;
     background-image: url("../icons/poison.png") !important;
-    background-repeat: no-repeat !important;;
-    background-size: cover  !important;;
+    background-repeat: no-repeat !important;
+    ;
+    background-size: cover !important;
+    ;
 }
+
 /* Glowing border around tabs */
 
 .tabbrowser-tab[selected="true"] {
@@ -120,11 +146,12 @@
 }
 
 
-  @media (-moz-bool-pref: "zen.tabs.dim-pending") {
-      .tabbrowser-tab:not([selected]) {
-      opacity: 0.8 !important;
+@media (-moz-bool-pref: "zen.tabs.dim-pending") {
+    .tabbrowser-tab:not([selected]) {
+        opacity: 0.8 !important;
     }
-  }
+}
+
 .titlebar-buttonbox {
     color: aqua !important;
 }
