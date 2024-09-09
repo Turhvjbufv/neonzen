@@ -1,0 +1,66 @@
+#urlbar-background,
+ #urlbar-container  {
+  border-radius: 0.5rem !important;
+  border: transparent !important;
+  background-color: transparent !important;
+   
+}
+
+#urlbar{
+  background-color: transparent !important;
+  border: 1px solid !important;
+  border-image: 0 0 1 0 linear-gradient(
+    to right,
+    rgb(159, 26, 255, 0.7),
+    rgb(159, 26, 255, 0.7),
+    rgb(138, 70, 255, 0.7),
+    rgb(118, 93, 255, 0.7),
+    rgb(93, 125, 255, 0.7),
+    rgb(62, 140, 255, 0.7),
+    rgb(28, 153, 255, 0.7),
+    rgb(0, 165, 255, 0.7),
+    rgb(0, 180, 255, 0.7),
+    rgb(0, 195, 255, 0.7),
+    rgb(0, 208, 255, 0.7),
+    rgb(0, 221, 255, 0.7)
+  ) !important;
+  color: aqua !important;
+  
+}
+
+#urlbar:is([focused]) {
+  background-color: transparent !important;
+  border: transparent !important;
+    position: relative;
+
+}
+
+#urlbar:is([focused])::after {
+  content: ''; 
+  background-image: url("../icons/poison.png") !important;
+  opacity: 0.7 !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1; /* Ensure the image is behind the content */
+}
+
+
+#identity-box{
+  background-color: transparent !important;
+}
+#identity-icon-box{
+  background-color: transparent !important;
+  
+}
+#identity-icon-box:hover{
+  background-color: rgb(242, 0, 182, 0.5) !important;
+  transition: 0.2s ease-in-out !important;
+}
+.urlbar-input-container{
+  color: aqua !important;
+}
