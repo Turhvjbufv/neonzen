@@ -1,6 +1,6 @@
 
 # neon/cyberpunk theme for zen-browser
-![skin](Look.png)
+![skin](skin.png)
 <b>Steps to configure the theme:</b>
 <ol>
    <li>Download the theme(chrome.rar & user.js) from the <b> << Releases >> </b> section, in the right side of this page</code></li> 
