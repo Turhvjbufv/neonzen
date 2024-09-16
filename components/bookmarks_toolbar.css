@@ -1,0 +1,21 @@
+#sidebar-box {
+  background-color: transparent !important;
+}
+
+.sidebar-panel[lwt-sidebar] {
+  background-color: transparent !important;
+}
+
+#search-box {
+  background-color: transparent !important;
+}
+
+#sidebar-search-container {
+  background-color: transparent !important;
+}
+
+@media (not (-moz-bool-pref: "uc.bookmarks.transparent")) {
+  #PersonalToolbar:not([customizing]) {
+    background-color: transparent !important;
+  }
+}
