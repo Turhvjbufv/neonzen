@@ -3,18 +3,59 @@
         color: #f200b6 !important;
     box-shadow: 0px 0px 1px rgba(255, 0, 255, 1), 
                 0px 0px 4px rgba(0, 255, 255, 1) !important; /* Neon glow effect */
-      justify-content: space-around !important; // do this firs!!!!!!!!!!!!!!!!!!!!!!
+      justify-content: space-around !important;
     }
 }
-@media (-moz-bool-pref: "zen.view.sidebar-expanded") {
-  .tabbrowser-tab {
-      & .tab-stack {
-        background-color: black !important;
-        border-radius: 1rem !important;
-    }
+
+.tabbrowser-tab:hover {
+  color: #f200b6 !important;
+  box-shadow: 0px 0px 1px rgba(255, 0, 0, 1), 0px 0px 4px rgba(255, 0, 0, 1) !important;
+  transition: box-shadow 0.1s ease-in-out !important;
+}
+.tab-background {
+  background-color: transparent !important;
+  box-shadow:  transparent !important;
+}
+.tabbrowser-tab:is([selected]) {
+  box-shadow: 0px 0px 2px rgba(255, 0, 255, 1), 0px 0px 1px rgba(0, 255, 255, 1) !important;
+  transition: box-shadow 0.1s ease-in-out !important;
+  /* Neon glow effect for selected tabs */
+  border: 2px solid !important;
+  border-color: rgba(255, 0, 255, 0.6) !important;
+  /* pink border for active tab */
+}
+
+
+.tabbrowser-tab:is([selected]):hover {
+  box-shadow: 0px 0px 1px rgba(255, 0, 0, 1), 0px 0px 4px rgba(255, 0, 0, 1) !important;
+  transition: box-shadow 0.1s ease-in-out !important;
+}
+
+#vertical-tabs-newtab-button {
+  background-color: black !important;
+}
+
+#vertical-tabs-newtab-button:hover {
+  background-color: rgb(15, 15, 15) !important;
+  border: red solid 1px !important;
+}
+
+
+
+.zen-sidebar-action-button:hover {
+  box-shadow: 0px 0px 1px rgba(255, 0, 0, 1), 0px 0px 4px rgba(255, 0, 0, 1) !important;
+  transition: box-shadow 0.1s ease-in-out !important;
+  /* changes the color of second toolbar on hover*/
+}
+
+.tabbrowser-tab {
+  & .tab-stack {
+    background-color: black !important;
+    border-radius: 1rem !important;
+    /* changes the background color of tabs and their border*/
   }
 }
-}
+
 .tabbrowser-tab:is([multiselected="true"], [selected]) {
   background: red !important;
   background-color: red !important;
