@@ -1,23 +1,26 @@
-.tabbrowser-tab {
+.tabbrowser-tab:hover {
+  box-shadow: 2px 0px 5px rgba(255, 0, 0, 1), 0px 0px 5px rgba(255, 0, 0, 1) !important;
+  transition: box-shadow 0.1s ease-in-out !important;
+}
+
+.tabbrowser-tab:is([selected]):hover {
+  /*currently does nothing, maybe in the future*/
+  box-shadow: 2px 0px 5px rgba(255, 0, 0, 1), 0px 0px 5px rgba(255, 0, 0, 1) !important;
+  transition: box-shadow 0.1s ease-in-out !important;
+}
+.tabbrowser-tab{
+  font-size: 0.9rem !important;
   color: #f200b6 !important;
+}
+.tab-background {
   box-shadow: 0px 0px 1px rgba(255, 0, 255, 1), 0px 0px 4px rgba(0, 255, 255, 1) !important;
   margin-top: 3px !important;
   margin-bottom: 3px !important;
   border-radius: 1rem !important;
   transition: box-shadow 0.1s ease-in-out !important;
-  background-color: black !important;
-}
-
-.tabbrowser-tab:hover {
-  color: #f200b6 !important;
-  box-shadow: 0px 0px 1px rgba(255, 0, 0, 1), 0px 0px 4px rgba(255, 0, 0, 1) !important;
-  transition: box-shadow 0.1s ease-in-out !important;
-}
-.tab-background {
   background-color: transparent !important;
-  box-shadow:  transparent !important;
 }
-.tabbrowser-tab:is([selected]) {
+.tab-background:is([selected]) {
   box-shadow: 0px 0px 2px rgba(255, 0, 255, 1), 0px 0px 1px rgba(0, 255, 255, 1) !important;
   transition: box-shadow 0.1s ease-in-out !important;
   /* Neon glow effect for selected tabs */
@@ -26,14 +29,8 @@
   /* pink border for active tab */
 }
 
-
-.tabbrowser-tab:is([selected]):hover {
-  box-shadow: 0px 0px 1px rgba(255, 0, 0, 1), 0px 0px 4px rgba(255, 0, 0, 1) !important;
-  transition: box-shadow 0.1s ease-in-out !important;
-}
-
 #vertical-tabs-newtab-button {
-  background-color: black !important;
+  background-color: transparent !important;
 }
 
 #vertical-tabs-newtab-button:hover {
@@ -51,15 +48,10 @@
 
 .tabbrowser-tab {
   & .tab-stack {
-    background-color: black !important;
+    background-color: transparent !important;
     border-radius: 1rem !important;
     /* changes the background color of tabs and their border*/
   }
-}
-
-
-.tab-stack {
-  height: 32px !important;
 }
 
 .tab-content:is([multiselected="true"], [selected]) {
@@ -84,13 +76,6 @@
   background-color: transparent !important;
 }
 
-.tab-background {
-  border-radius: 20px 20px 0 0 !important;
-  margin-top: 5px !important;
-  padding: 0 10px !important;
-  transform: translateY(5px) !important;
-  transition: transform 0.3s ease, background-color 0.1s ease !important;
-}
 
 #appcontent,
 #browser,
@@ -123,3 +108,9 @@
     opacity: 0.8 !important;
   }
 }
+  #tabbrowser-arrowscrollbox {
+    &::part(scrollbox) {
+      gap: 0px !important;
+      scrollbar-width: 0px !important;
+    }
+  }
