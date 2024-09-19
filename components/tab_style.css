@@ -54,19 +54,33 @@
   }
 }
 
+<<<<<<< HEAD
+=======
+.tabbrowser-tab:is([multiselected="true"], [selected]) {
+  background: red !important;
+  background-color: red !important;
+  
+}
+.tabbrowser-tab:is([multiselected="true"], [selected]) {
+    box-shadow: 0px 0px 4px rgba(255, 0, 255, 1), 
+                0px 0px 1px rgba(0, 255, 255, 1) !important; /* Neon glow effect */
+}
+.tab-stack {
+  height: 32px !important;
+}
+>>>>>>> bdcb3b6e7fcf9da5a3839d277a2165c2f4c1b1d9
 .tab-content:is([multiselected="true"], [selected]) {
   color: red !important;
 }
-
 #zen-tabbox-wrapper {
-  background-color: transparent !important;
+  background-color: black !important;
 }
-
 .browser-toolbar {
   &:not(.titlebar-color) {
-    background-color: transparent !important;
+    background-color: black !important;
   }
 }
+<<<<<<< HEAD
 
 #appcontent,
 #browser,
@@ -83,30 +97,17 @@
 #tabbrowser-tabpanels,
 .browserSidebarContainer {
   border-color: transparent !important;
+=======
+#appcontent, #browser, #tabbrowser-tabbox, #tabbrowser-tabpanels, .browserSidebarContainer {
+>>>>>>> bdcb3b6e7fcf9da5a3839d277a2165c2f4c1b1d9
   background-color: black !important;
-  background-image: url("../icons/poison.png") !important;
-  background-repeat: no-repeat !important;
-  background-size: cover !important;
 }
-
-
-
-@keyframes pulseGlow {
-  from {
-    box-shadow: 0px 0px 8px rgba(0, 255, 255, 1),
-      0px 0px 8px rgba(255, 0, 255, 1) !important;
-  }
-
-  to {
-    box-shadow: 0px 0px 15px rgba(0, 255, 255, 0.5),
-      0px 0px 15px rgba(255, 0, 255, 0.5) !important;
-  }
-}
-
-@media (-moz-bool-pref: "zen.tabs.dim-pending") {
-  .tabbrowser-tab:not([selected]) {
-    opacity: 0.8 !important;
-  }
+.tab-background {
+    border-radius: 20px 20px 0 0 !important;
+    margin-top: 5px !important;
+    padding: 0 10px !important;
+    transform: translateY(5px) !important;
+    transition: transform 0.3s ease, background-color 0.3s ease !important;
 }
   #tabbrowser-arrowscrollbox {
     &::part(scrollbox) {
