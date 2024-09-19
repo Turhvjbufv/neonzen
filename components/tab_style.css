@@ -8,7 +8,7 @@
   box-shadow: 2px 0px 5px rgba(255, 0, 0, 1), 0px 0px 5px rgba(255, 0, 0, 1) !important;
   transition: box-shadow 0.1s ease-in-out !important;
 }
-.tabbrowser-tab{
+.tabbrowser-tab {
   font-size: 0.9rem !important;
   color: #f200b6 !important;
 }
@@ -37,8 +37,6 @@
   background-color: rgb(15, 15, 15) !important;
   border: red solid 1px !important;
 }
-
-
 
 .zen-sidebar-action-button:hover {
   box-shadow: 0px 0px 1px rgba(255, 0, 0, 1), 0px 0px 4px rgba(255, 0, 0, 1) !important;
@@ -76,7 +74,6 @@
   background-color: transparent !important;
 }
 
-
 #appcontent,
 #browser,
 #tabbrowser-tabbox,
@@ -88,8 +85,6 @@
   background-repeat: no-repeat !important;
   background-size: cover !important;
 }
-
-
 
 @keyframes pulseGlow {
   from {
@@ -108,9 +103,9 @@
     opacity: 0.8 !important;
   }
 }
-  #tabbrowser-arrowscrollbox {
-    &::part(scrollbox) {
-      gap: 0px !important;
-      scrollbar-width: 0px !important;
-    }
+#tabbrowser-arrowscrollbox {
+  &::part(scrollbox) {
+    gap: 0px !important;
+    scrollbar-width: 0px !important;
   }
+}
