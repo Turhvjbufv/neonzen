@@ -52,21 +52,25 @@
   }
 }
 
+.tabbrowser-tab:is([multiselected="true"], [selected]) {
+  background-color: transparent !important;
+}
+.tabbrowser-tab:is([multiselected="true"], [selected]) {
+  box-shadow: 0px 0px 4px rgba(255, 0, 255, 1), 0px 0px 1px rgba(0, 255, 255, 1) !important; /* Neon glow effect */
+}
+
 .tab-content:is([multiselected="true"], [selected]) {
   color: red !important;
 }
-
 #zen-tabbox-wrapper {
   background-color: transparent !important;
 }
-
 .browser-toolbar {
   &:not(.titlebar-color) {
     background-color: transparent !important;
   }
 }
-
-#appcontent,
+<<<<<<< HEAD #appcontent,
 #browser,
 #tabbrowser-tabbox,
 #tabbrowser-tabpanels,
@@ -80,12 +84,7 @@
 #tabbrowser-tabpanels,
 .browserSidebarContainer {
   border-color: transparent !important;
-  background-color: black !important;
-  background-image: url("../icons/poison.png") !important;
-  background-repeat: no-repeat !important;
-  background-size: cover !important;
 }
-
 @keyframes pulseGlow {
   from {
     box-shadow: 0px 0px 8px rgba(0, 255, 255, 1),
