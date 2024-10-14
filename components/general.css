@@ -67,4 +67,6 @@
   /* changes the background*/
   
 }
-
+.scrollbox-clip{
+  background-color: transparent !important;
+}

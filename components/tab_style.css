@@ -12,6 +12,9 @@
   font-size: 0.9rem !important;
   color: #f200b6 !important;
 }
+#tabbrowser-arrowscrollbox {
+  max-height: unset !important;
+}
 .tab-background {
   box-shadow: 0px 0px 1px rgba(255, 0, 255, 1), 0px 0px 4px rgba(0, 255, 255, 1) !important;
   margin-top: 3px !important;
@@ -46,9 +49,7 @@
 
 .tabbrowser-tab {
   & .tab-stack {
-    background-color: transparent !important;
-    border-radius: 1rem !important;
-    /* changes the background color of tabs and their border*/
+    height: 3rem !important;
   }
 }
 
@@ -59,7 +60,7 @@
   box-shadow: 0px 0px 4px rgba(255, 0, 255, 1), 0px 0px 1px rgba(0, 255, 255, 1) !important; /* Neon glow effect */
 }
 
-.tab-content:is([multiselected="true"], [selected]) {
+.tab-content:is([selected]) {
   color: red !important;
 }
 #zen-tabbox-wrapper {
@@ -70,21 +71,15 @@
     background-color: transparent !important;
   }
 }
-<<<<<<< HEAD #appcontent,
-#browser,
-#tabbrowser-tabbox,
-#tabbrowser-tabpanels,
-.browserSidebarContainer {
-  background-color: transparent !important;
-}
-
 #appcontent,
 #browser,
 #tabbrowser-tabbox,
 #tabbrowser-tabpanels,
 .browserSidebarContainer {
+  background-color: transparent !important;
   border-color: transparent !important;
 }
+
 @keyframes pulseGlow {
   from {
     box-shadow: 0px 0px 8px rgba(0, 255, 255, 1),
@@ -97,14 +92,9 @@
   }
 }
 
-@media (-moz-bool-pref: "zen.tabs.dim-pending") {
-  .tabbrowser-tab:not([selected]) {
-    opacity: 0.8 !important;
-  }
+.tabbrowser-tab:not([selected]) {
+  opacity: 0.8 !important;
 }
-#tabbrowser-arrowscrollbox {
-  &::part(scrollbox) {
-    gap: 0px !important;
-    scrollbar-width: 0px !important;
-  }
+.tabbrowser-tab:not([selected]):hover {
+  opacity: 1 !important;
 }
